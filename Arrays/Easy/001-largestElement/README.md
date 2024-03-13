@@ -25,7 +25,6 @@ Instead of sorting the entire array, this approach scans through the array once 
 3. Return the largest element after completing the iteration.
 
 **Time Complexity**: O(n) - The function scans through each element of the array once.
-
 **Space Complexity**: O(1) - No additional structures are used, maintaining constant space.
 
 ```
