@@ -28,3 +28,40 @@ vector<int> getSecondOrderElements(int n, vector<int> arr) {
 }
 
 ```
+
+## Optimal Approach
+
+**Time Complexity**: O(n)  
+**Space Complexity**: O(1)
+
+This approach iterates through the array once to find the second largest and second smallest elements simultaneously.
+
+```cpp
+vector<int> getSecondOrderElements(int n, vector<int> arr) {
+    int largest = INT_MIN;
+    int secondLargest = INT_MIN;
+    int smallest = INT_MAX;
+    int secondSmallest = INT_MAX;
+
+    for(int i = 0; i < n; i++) {
+        if(arr[i] > largest) {
+            secondLargest = largest;
+            largest = arr[i];
+        } else if(arr[i] > secondLargest) {
+            secondLargest = arr[i];
+        }
+
+        if(arr[i] < smallest) {
+            secondSmallest = smallest;
+            smallest = arr[i];
+        } else if(arr[i] < secondSmallest) {
+            secondSmallest = arr[i];
+        }
+    }
+
+    vector<int> answerArrar(2);
+    answerArrar[0] = secondLargest;
+    answerArrar[1] = secondSmallest;
+
+    return answerArrar;
+}
