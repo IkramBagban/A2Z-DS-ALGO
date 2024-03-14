@@ -1,7 +1,7 @@
 Check Sorted Array - <a href="bit.ly/4ceoJKa">Coding Ninja</a> <br />
 1752. Check if Array Is Sorted and Rotated <a href="https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/description/">Leetcode</a> <br />
 
-# 1) Check Sorted Array (Coding Ninja)
+# 1) Check Sorted Array <a href="bit.ly/4ceoJKa">(Coding Ninja)</a>
 **Time Complexity**: O(n)  
 **Space Complexity**: O(1)
 ```cpp
@@ -16,7 +16,7 @@ int isSorted(int n, vector<int> a) {
 }
 ```
 
-# 2) 1752. Check if Array Is Sorted and Rotated (Leetcode)
+# 2) 1752. Check if Array Is Sorted and Rotated <a href="https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/description/">(Leetcode)</a> <br />
 ## **Intuition:**
 We want to determine if the array is nearly sorted or not. If the array breaks its ascending order only once or not at all, it's considered nearly sorted. Otherwise, it's not.
 
