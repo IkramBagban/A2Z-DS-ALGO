@@ -1,7 +1,7 @@
-<a href="bit.ly/4ceoJKa">Check Sorted Array (Coding Ninja)</a> <br />
-<a href="https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/description/">1752. Check if Array Is Sorted and Rotated</a> <br />
+Check Sorted Array - <a href="bit.ly/4ceoJKa">Coding Ninja</a> <br />
+1752. Check if Array Is Sorted and Rotated <a href="https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/description/">Leetcode</a> <br />
 
-## 1) Check Sorted Array (Coding Ninja)
+# 1) Check Sorted Array (Coding Ninja)
 **Time Complexity**: O(n)  
 **Space Complexity**: O(1)
 ```cpp
@@ -16,11 +16,11 @@ int isSorted(int n, vector<int> a) {
 }
 ```
 
-## 2) 1752. Check if Array Is Sorted and Rotated (Leetcode)
-# **Intuition:**
+# 2) 1752. Check if Array Is Sorted and Rotated (Leetcode)
+## **Intuition:**
 We want to determine if the array is nearly sorted or not. If the array breaks its ascending order only once or not at all, it's considered nearly sorted. Otherwise, it's not.
 
-# **Approach:**
+## **Approach:**
 1. **Case 1 - Properly Sorted Array:**
 If the array is already sorted, it's almost sorted. We check if the last element is greater than the first one to handle the case when the array is circular (e.g., [9, 1, 2, 3, 4]). If the last element is greater, it means the array is nearly sorted, so we increment **`count`** by 1. 
 
@@ -30,7 +30,7 @@ If the array is sorted but rotated, it's still considered nearly sorted. We iter
 3. **Case 3 - All Elements Equal:**
 If all elements in the array are the same, it's also considered nearly sorted. In this case, **`count`** remains 0.
 
-# **Explanation:**
+## **Explanation:**
 If **`count`** is less than or equal to 1, it means the array is nearly sorted and we return true. Otherwise, we return false.
 
 ```cpp
@@ -61,6 +61,6 @@ bool check(vector<int>& nums) {
 
 ```
 
-# **Complexity:**
+## **Complexity:**
 - **Time Complexity:** The algorithm iterates through the array once, leading to a linear time complexity of O(N), where N is the size of the array.
 - **Space Complexity:** The algorithm uses only a constant amount of extra space for variables, resulting in constant space complexity of O(1).
