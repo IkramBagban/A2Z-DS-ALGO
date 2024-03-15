@@ -1,4 +1,4 @@
-question : <a href="https://www.codingninjas.com/studio/problems/largest-element-in-the-array-largest-element-in-the-array_5026279?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=SUBMISSION">Link</a> <br /><br />
+Largest element in the array - <a href="https://www.codingninjas.com/studio/problems/largest-element-in-the-array-largest-element-in-the-array_5026279?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=SUBMISSION">Coding Ninja </a> <br /><br />
 
 ### **Brute Force Approach:**
 1. Sort the array in ascending order.
