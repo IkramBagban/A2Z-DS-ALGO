@@ -24,3 +24,20 @@ public:
 };
 
 ```
+
+
+## Optimal approach'
+### 2 pointer approch
+```cpp
+  int index = 1;
+      int uniqueElementIdx = 0;
+        while(index < nums.size()){
+            if(nums[uniqueElementIdx] != nums[index]){
+                uniqueElementIdx++;
+                nums[uniqueElementIdx] = nums[index];
+            }
+            index++;
+        }
+
+        return uniqueElementIdx + 1;
+```
