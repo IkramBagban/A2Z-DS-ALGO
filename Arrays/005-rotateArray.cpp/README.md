@@ -19,23 +19,21 @@ Explanation: We moved the 2nd element to the 1st position, and 3rd element to th
 <details>
   <summary>
   <b>Intuition:</b>
-
   </summary>
-    To rotate the array left by one position, we can follow a simple approach:
-
-    1. Store the first element of the array in a temporary variable.
-    2. Shift all elements one position to the left.
-    3. Place the stored first element in the last position of the array.
+To rotate the array left by one position, we can follow a simple approach:
+- Store the first element of the array in a temporary variable.
+- Shift all elements one position to the left.
+- Place the stored first element in the last position of the array.
 </details>
 <details>
   <summary>
     <b>Approach:</b>:
   </summary>
-* Store the first element of the array in a variable firstElement.
-* Iterate through the array from index 0 to n-1.
-* Replace each element at index i with the element at index i+1.
-* Place the firstElement at the last position of the array, i.e., at index n-1.
-* Return the modified array.
+- Store the first element of the array in a variable firstElement.
+- Iterate through the array from index 0 to n-1.
+- Replace each element at index i with the element at index i+1.
+- Place the firstElement at the last position of the array, i.e., at index n-1.
+- Return the modified array.
 </details>
 
 ```cpp
