@@ -31,11 +31,11 @@ Explanation: We moved the 2nd element to the 1st position, and 3rd element to th
   <summary>
     <b>Approach:</b>:
   </summary>
-    - Store the first element of the array in a variable firstElement.
-    - Iterate through the array from index 0 to n-1.
-    - Replace each element at index i with the element at index i+1.
-    - Place the firstElement at the last position of the array, i.e., at index n-1.
-    - Return the modified array.
+    * Store the first element of the array in a variable firstElement.
+    * Iterate through the array from index 0 to n-1.
+    * Replace each element at index i with the element at index i+1.
+    * Place the firstElement at the last position of the array, i.e., at index n-1.
+    * Return the modified array.
 </details>
 
 ```cpp
