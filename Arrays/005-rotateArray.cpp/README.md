@@ -1,5 +1,3 @@
-Left Rotate an Array by One - <a href="https://www.codingninjas.com/studio/problems/left-rotate-an-array-by-one_5026278?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM">Coding Ninja</a> <br />
-
 <details>
   <summary>Left Rotate an Array by One - <a href="https://www.codingninjas.com/studio/problems/left-rotate-an-array-by-one_5026278?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM">Coding Ninja</a></summary>
   
@@ -18,18 +16,43 @@ Explanation: We moved the 2nd element to the 1st position, and 3rd element to th
 
 </details>
 
-```cpp
-#include <bits/stdc++.h>
-vector<int> rotateArray(vector<int>& arr, int n) {
-    // Write your code here.
-    int firstElement = arr[0];
+<details>
+  <summary>
+  <h4>Intuition:</h4>
+To rotate the array left by one position, we can follow a simple approach:
 
-    for(int i = 0; i<n; i++){
-        arr[i] = arr[i+1];
+1. Store the first element of the array in a temporary variable.
+2. Shift all elements one position to the left.
+3. Place the stored first element in the last position of the array.
+
+  </summary>
+</details>
+<details>
+  <summary>
+  <h4>Approach:</h4>:
+- Store the first element of the array in a variable firstElement.
+- Iterate through the array from index 0 to n-1.
+- Replace each element at index i with the element at index i+1.
+- Place the firstElement at the last position of the array, i.e., at index n-1.
+- Return the modified array.
+
+  </summary>
+</details>
+
+```cpp
+vector<int> rotateArray(vector<int>& arr, int n) {
+    int firstElement = arr[0]; // Store the first element
+
+    // Shift all elements one position to the left
+    for(int i = 0; i < n; i++){
+        arr[i] = arr[i + 1];
     }
 
-    arr[n-1] = firstElement;
+    arr[n - 1] = firstElement; // Place the first element at the last position
 
-    return arr;
+    return arr; // Return the modified array
 }
+
 ```
+
+This approach ensures that the array is rotated left by one position, as required.
