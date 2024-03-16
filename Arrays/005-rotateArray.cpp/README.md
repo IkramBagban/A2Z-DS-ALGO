@@ -18,7 +18,7 @@ Explanation: We moved the 2nd element to the 1st position, and 3rd element to th
 
 <details>
   <summary>
-  <h4>Intuition:</h4>
+  <b>Intuition:</b>
 
   </summary>
     To rotate the array left by one position, we can follow a simple approach:
@@ -29,7 +29,7 @@ Explanation: We moved the 2nd element to the 1st position, and 3rd element to th
 </details>
 <details>
   <summary>
-    <h4>Approach:</h4>:
+    <b>Approach:</b>:
   </summary>
     - Store the first element of the array in a variable firstElement.
     - Iterate through the array from index 0 to n-1.
