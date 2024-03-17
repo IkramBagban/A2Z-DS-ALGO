@@ -7,7 +7,7 @@ Largest element in the array - <a href="https://www.codingninjas.com/studio/prob
 **Time Complexity**: O(n log n) - This is due to the time complexity of the sorting algorithm. <br>
 **Space Complexity**: O(1) - The sorting is done in-place, and no additional space is used apart from temporary variables. 
 
-```
+```cpp
 #include <bits/stdc++.h>int largestElement(vector<int> &arr, int n) {
     std::sort(arr.begin(), arr.end());
     return arr[n-1];
